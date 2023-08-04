@@ -10,7 +10,7 @@ const generarJWT = ( uid, name ) => {
             expiresIn: '2h'
 
 
-            
+
         }, (err, token ) => {
 
             if ( err ){
@@ -19,6 +19,9 @@ const generarJWT = ( uid, name ) => {
             }
 
             resolve( token );
+
+
+            
 
         })
 
